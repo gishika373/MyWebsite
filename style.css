@@ -1,0 +1,334 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.left-column,
+.right-column {
+    width: 45%;
+}
+
+.left-column h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #555;
+}
+
+.left-column h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.left-column p {
+    font-size: 1em;
+    color: #777;
+}
+
+.left-column .contact-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(245, 96, 106);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Add the font family at the top */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.heading-row {
+    text-align: center;
+}
+
+.columns-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.slider {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 1 0 25%; /* Show 4 slides at a time */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.slide img, .card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.slide .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+    height: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.748);
+   
+}
+
+.slide .card h2 {
+    margin: 0 0 10px 0;
+}
+
+.slide .card p {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    font-size: 10px;
+}
+.slide .card button{
+    padding: 5px;
+    color:rgb(245, 96, 106);
+    background-color: white;
+    border: none;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+
+/* ------------------------- */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row.small-heading h4 {
+    margin: 0px;
+}
+
+.row.small-heading {
+    justify-content: center;
+}
+
+.row.heading {
+    justify-content: center;
+}
+
+.row.cards {
+    justify-content: space-between;
+}
+.row.cards h3 {
+    font-size: 15px;
+   
+}
+.row.cards p {
+    padding-top: 1rem;
+    font-size: 12px;
+}
+
+.card {
+    width: 22%;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 70px;
+    margin-bottom: 10px;
+
+}
+
+/* ----------------------------------- */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.row.small-heading {
+    justify-content: center;
+    color: rgb(245, 96, 106);
+}
+
+.row.heading {
+    justify-content: center;
+}
+
+.row.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.column .content-row {
+    margin-bottom: 20px;
+    /* margin-left: 11rem;
+    margin-right: 8rem; */
+}
+
+
+/* ----------------------------------------------------- */
+/* Footer styling */
+.footer {
+    background-color: rgb(244, 50, 66);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    
+}
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.row.cards.highlight .card:hover{
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0%;
+}
+.row.cards.highlight img{
+    width: 30px;
+}
+.row.cards.highlight h1{
+    font-weight:lighter;
+}
+.row.cards.highlight p{
+    color: gray;
+    font-size: 15px;
+}
+
+
+.row-custom {
+    display: flex;
+    width: 100%;
+}
+
+.column-custom {
+    padding: 10px;
+}
+
+.image-column {
+    flex: 2; /* This column will take twice the width of the text column */
+}
+
+.text-column {
+    flex: 1; /* This column will take one part of the width */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image-custom {
+    width: 90%;
+    height: 450px;
+    object-fit: cover; /* Ensures the image covers the given area without distortion */
+}
+
+.text-card-custom {
+    background-color: #f1f1f1;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    text-align: left;
+    flex: 1; /* Makes sure the cards are of equal height */
+}
+.text-card-custom p{
+    margin-top: 15px;
+}
+.text-card-custom:not(:last-child) {
+    margin-bottom: 0; /* Removes spacing between the text cards */
+}
+
+.text-card-custom:hover {
+    background-color: rgb(245, 96, 106);
+}

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #aeacacb9;
+    margin: 0;
+}
+
+.card form {
+    width: 450px;
+    height: 400px; /* Increased the height */
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space between rows */
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+.full-width {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-width {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #dc3545; /* Red color */
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+
+.custom-checkbox:checked {
+    background-color: #dc3545; /* Red color when checked */
+}
+
+.custom-checkbox:checked::before {
+    content: "\2713"; /* Checkmark symbol */
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: #fff; /* White color for checkmark */
+}
+
+p {
+    margin: 0;
+    color: gray;
+    font-size: 18px;
+}
+
+.contact-button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(245, 96, 106);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: rgb(245, 96, 106);
+}

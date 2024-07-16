@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- First section -->
+    <section class="container" style="width: 75%; margin:auto">
+        <div class="left-column" >
+            <h3 style="color: rgb(245, 96, 106);">AWARD WINNING</h3>
+            <h1>DIGITAL MARKETING AGENCY</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vehicula ante. Proin sit amet
+                ultricies nisi.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button class="contact-btn"><a href="contact.html" style="text-decoration: none; color:white">Contact us</a></button>
+        </div>
+        <div class="right-column">
+            <img src="image1.jpg" alt="Description of Image">
+        </div>
+    </section>
+
+    <!-- Second section -->
+    <div class="container" style="display: block;">
+        <!-- First Row: Heading -->
+        <div class="row heading-row" style="width: 90%; margin:auto">
+            <h3 style="color: rgb(245, 96, 106);">WHAT WE DO</h3>
+        </div>
+        
+        <!-- Second Row: Two Columns -->
+        <div class="row columns-row" style="width: 90%; margin:auto; padding:2rem; padding-left:0px;">
+            <!-- First Column: Heading -->
+            <div class="column">
+                <h1 style="font-size: 3rem;">SERVICES PROVIDE FOR YOU</h1>
+            </div>
+            <!-- Second Column: Paragraph -->
+            <div class="column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vehicula ante. Proin sit amet ultricies nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        
+        <!-- Third Row: Slider -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="image2.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="Image 2" style="height: -webkit-fill-available">
+                </div>
+                <div class="slide">
+                    <div class="card" style="width: auto; background-color:rgb(245, 96, 106)">
+                        <h4>WEB DEVELOPMENT</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button style="padding:5px; font-weight:bold;">
+                            <a href="https://www.fylehq.com/" style="text-decoration: none; color:rgb(245, 96, 106); display:flex;"><span>Read More</span> &nbsp; &nbsp;  <img src="right-arrow.png" alt="image" style="width: 20px;"></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image4.jpg" alt="Image 4">
+                </div>
+            </div>
+        </div>
+        
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+
+
+    <!-- Third section -->
+    <div class="container" id="card-container" style="display: block;">
+        <!-- First Row: Small Heading -->
+        <div class="row small-heading" style="color: rgb(245, 96, 106);" style="width: 90%; margin:auto">
+            <h4>WHY CHOOSE US</h4>
+        </div>
+
+        <!-- Second Row: Main Heading -->
+        <div class="row heading" style="width: 90%; margin:auto">
+            <h1>WHY WE ARE BEST</h1>
+        </div>
+
+        <!-- Third Row: Cards -->
+        <div class="row cards" style="width: 90%; margin:auto">
+            <!-- Card 1 -->
+            <div class="card" style="text-align: left;">
+                <img src="target.png" alt="Logo 1">
+                <h3>Clarified Vision & Target</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vehicula ante. Proin sit amet
+                    ultricies nisi.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" style="text-align: left;">
+                <img src="races.png" alt="Logo 2">
+                <h3>High Performance</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vehicula ante. Proin sit amet
+                    ultricies nisi.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" style="text-align: left;">
+                <img src="shield.png" alt="Logo 3" >
+                <h3>Maintain Security</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vehicula ante. Proin sit amet
+                    ultricies nisi.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" style="text-align: left;">
+                <img src="help.png" alt="Logo 4">
+                <h3>Better Strategy & Quality</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vehicula ante. Proin sit amet
+                    ultricies nisi.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Forth section -->
+
+    <div class="container" style="display: block; width:80%">
+        <!-- First Row: Small Heading -->
+        <div class="row small-heading" style="width: 90%; margin:auto">
+            <h4 style="padding-bottom: 20px;">OUR PROJECT</h4>
+        </div>
+
+        <!-- Second Row: Main Heading -->
+        <div class="row heading" style="width: 90%; margin:auto">
+            <h1 style="padding-bottom: 10px;">WHY WE ARE BEST</h1>
+        </div>
+
+        <!-- Third Row: Columns -->
+        <div class="row-custom">
+            <div class="column-custom image-column">
+                <img id="mainImage" src="image5.jpg" alt="Main Image" class="main-image-custom">
+            </div>
+            <div class="column-custom text-column">
+                <div class="text-card-custom" onclick="changeImage('image5.jpg')">
+                    <h4>Genderless Kei - Japan's Hot</h4>
+                    <p>Set to Launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-card-custom" onclick="changeImage('image4.jpg')">
+                    <h4>Better Strategy & Quality</h4>
+                    <p>Set to Launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="text-card-custom" onclick="changeImage('image3.jpg')">
+                    <h4>Genderless Kei - Japan's Hot</h4>
+                    <p>Set to Launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Fifth section -->
+    <div class="container" style="display: block;">
+        <!-- First Row: Small Heading -->
+        <div class="row small-heading" style="width: 90%; margin:auto; color:rgb(245, 96, 106)red;">
+            <h4 style="padding: 5px;">EXPERTS GROWTH</h4>
+        </div>
+
+        <!-- Second Row: Main Heading -->
+        <div class="row heading" style="width: 90%; margin:auto">
+            <h1 style="padding: 5px;">OUR COMPANY GROWTH</h1>
+        </div>
+
+        <!-- Third Row: Cards -->
+        <div class="row cards highlight" style="text-align: center; width: 90%; margin:auto">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="heart.png" alt="Logo 1">
+                <h1>199 +</h1>
+                <p>Staticfied Customers</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="time.png" alt="Logo 2">
+                <h1>1591 +</h1>
+                <p>Days of Operations</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="checked.png" alt="Logo 3">
+                <h1>283 +</h1>
+                <p>Complete Project</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="trophy.png" alt="Logo 4">
+                <h1>75 +</h1>
+                <p>Win Awards</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sixth section -->
+    <div class="container" style="display: block;">
+        <!-- First Row: Small Heading -->
+        <div class="row small-heading" style="color: rgb(245, 96, 106); width: 90%; margin:auto">
+            <h4 style="padding-bottom: 20px;">CLIENT'S FEEDBACK</h4>
+        </div>
+
+        <!-- Second Row: Main Heading -->
+        <div class="row heading" style="width: 90%; margin:auto">
+            <h1 style="padding-bottom: 20px;">PEOPLE SAY'S ABOUT US !</h1>
+        </div>
+
+        <!-- Third Row: Cards -->
+        <div class="row" style="text-align: left; display:block; width: 50%; margin:auto; padding-top:20px;">
+            <p style="padding-bottom: 20px;">Jannat Tumpa The Standard chunk of Lorem lpsum used since the 1500s is reproduced below for those
+                interested.Sections Bonorum et Malorum original.</p>
+            <span style="color: rgb(245, 96, 106);">Jannat Tumpa</span><span style="color: gray;">- COO, AMERIMAR ENTERPRISES,
+                INC</span>
+        </div>
+    </div>
+
+
+    <!-- Seven section -->
+    <footer class="footer">
+        <div class="image-container">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+            <img src="logo4.png" alt="Logo 4">
+            <img src="logo5.png" alt="Logo 5">
+            <img src="logo6.png" alt="Logo 6">
+        </div>
+    </footer>
+
+
+
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
